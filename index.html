@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Link to Nunito Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Background</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="video-container">
+            <!-- Autoplay starts the video. Loop  causes the video to continuously loop through the video. Muted removese any sound from the video -->
+            <video src="html.mp4" autoplay loop muted></video>
+        </div>
+        <!-- Div to cover/darken background video -->
+        <div class="cover">
+
+        </div>
+        <div class="content">
+            <h1>Grant Patterson</h1>
+            <h2>Web Developer</h2>
+            <!-- Setting the href value to an id will take the user to the element with that id on the webpage -->
+            <a href="#about" class="click">About</a>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1>About</h1>
+        <p>Currently Enrolled in the Barren County Skills Development Academy Web Development Program</p>
+        <h2>Follow me on social media</h2>
+        <div class="social-media">
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <!-- Github -->
+            <a href="https://www.github.com" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- Linkedin -->
+            <a href="https://www.linkedin.com" target="blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
