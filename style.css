@@ -1,0 +1,113 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box includes padding and border when setting a width or height */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    /* Removes the underline on a link */
+    text-decoration: none;
+    color: #4D5163;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.main {
+    position: relative;
+    /* vh determines the height of the element by setting it to a percentage of the viewport. vs is used for width */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* So text does not go right up to the edge of a smaller screen size */
+    padding: 0 20px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    color: white;
+    z-index: 3;
+    text-align: center;
+}
+
+.click {
+    /* Inline-block allows you to set top and bottom margin as well as width and height. This is not the case with inline */
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 30px;
+    background: #4b5163;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.click:hover {
+    /* Scale changes the size of an element */
+    transform: scale(0.95);
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 20px;
+    margin: auto;
+    max-width: 500px;
+}
+
+#about h2 {
+    margin: 40px 0;
+    color: #4b5163;
+}
+
+i {
+    font-size: 48px;
+    margin: 0 5px;
+}
